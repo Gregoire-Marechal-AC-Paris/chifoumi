@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+<!-- ce DOCTYPE est nécessaire avec IE pour les marges automatiques -->
+<html>
+<!-- en-tete technique-->
+<head>
+<title>Chifoumi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Exemple de formulaire">
+<meta name="keywords" lang="fr" content="html,formulaire,boutons">
+<meta name="Author" content="Grégoire Maréchal">
+<!-- appel de la feuille de style externe -->
+ <link href="style_formulaire.css" type="text/css" rel="stylesheet" media="all">
+</head>
+
+<!--corps-->
+<body> 
+<!-- Debut du formulaire -->
+<form name="formulaire1" action="traitement.php" method="post" enctype='application/x-www-form-urlencoded'>
+
+<!-- Zones de Texte -->
+
+      	<h4>Veuillez saisir les jeux</h4>
+<fieldset>  
+<legend>Joueur 1</legend>
+		<label>Ciseau</label><input type="radio" name="choixjoueur1" value="C">
+		<label>Feuille</label><input type="radio" name="choixjoueur1" value="F">
+</fieldset>
+
+<fieldset>  
+<legend>Joueur 2</legend>
+		<label>Ciseau</label><input type="radio" name="choixjoueur2" value="C">
+		<label>Feuille</label><input type="radio" name="choixjoueur2" value="F">
+</fieldset>
+</fieldset>
+<!-- Bouton de validation ; la classe "envoi" sert pour la mise en page -->
+<div class="envoi">
+	<input type="submit" class="envoi" value="Envoyer" />
+</div>
+<!-- fin du formulaire -->
+</form>
+
+ </body>
+</html>
